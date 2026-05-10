@@ -21,6 +21,7 @@ public class Uni5Exe13 {
         }
         float media = conta / numeroTotal;
         System.out.println("Quilometragem média obtida por litro: " + media);
+        sc.close();
     }
 
 }

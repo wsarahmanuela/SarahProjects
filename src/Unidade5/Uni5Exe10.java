@@ -2,14 +2,15 @@ package Unidade5;
 
 public class Uni5Exe10 {
     public static void main(String[] args) {
-        int count = 0;
-        for(int i = 1; count < 10; i++){
-            int esquerda = i / 100;
-            int direita = i % 100;
-
-            if((esquerda + direita) *(esquerda + direita ) == i){
-                System.out.println(i);
-                count++;
+        for (int i = 0; i <= 10000; i++) {
+            for (int j = 0; j <= 10000; j++) {
+                // System.out.println(i + "+" + j + "=" + (i + j));
+                int soma = i + j;
+                String termo1 = i + "" + j;
+                String termo2 = "" + (int) Math.pow(soma, 2);
+                if (termo1.equals(termo2)) {
+                    System.out.println(termo1 + "-" + termo2);
+                }
             }
         }
     }
