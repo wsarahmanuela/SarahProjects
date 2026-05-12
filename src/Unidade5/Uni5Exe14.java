@@ -28,7 +28,7 @@ public class Uni5Exe14 {
             } else {
                 maior20++;
             }
-            System.out.println();
+            System.out.println("");
         }
     }
 }
