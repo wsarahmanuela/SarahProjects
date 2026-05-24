@@ -16,7 +16,7 @@ public class Uni5Exe26 {
         while (true) {
             System.out.println("Digite o valor do pedagio: ");
             pedagio = sc.nextFloat();
-            if (pedagio == -1) {
+            if (pedagio == -1) {    
                 break;
             }
             System.out.println("Digite a distancia: ");
