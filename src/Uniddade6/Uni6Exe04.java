@@ -38,7 +38,6 @@ public class Uni6Exe04 {
             }
             
         }
-        System.out.println("]");
         System.out.println("Vetor 2: [");
         for(int i = 0; i<tamanho; i++){
             System.out.println(vetor2[i] + ",");
@@ -56,7 +55,10 @@ public class Uni6Exe04 {
 
     public static void main(String[] args) {
         Uni6Exe04 uni6Exe04 = new Uni6Exe04();
-
+        uni6Exe04.lerValores();
+        uni6Exe04.somarValores();
+        uni6Exe04.escreverValores();
+        
     }
 
 }
