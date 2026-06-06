@@ -9,10 +9,10 @@ public class Uni6Exe07 {
     private void tamanhovetor() {
         System.out.println("Digite o tamanho do vetor: ");
         int n = sc.nextInt();
-        vetor = new int[n];
         while (n > 20) {
             System.out.println("Valor inválido! Digite um valor até 20: ");
             n = sc.nextInt();
+            vetor = new int[n];
         }
     }
 
