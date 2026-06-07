@@ -135,16 +135,22 @@ public class Uni6Exe10 {
         int temp = 0;
         for (int i = 0; i < posicaoFim; i++) {
             for (int j = 0; j < i; j++) {
-                temp = vetor[i];
-                vetor[i] = vetor[j];
-                vetor[j] = temp;
+                temp = vetor[i];//guarda o valor de i na caixinha temporária para não perder
+                vetor[i] = vetor[j];//coloca o valor de j na posição de i
+                vetor[j] = temp;//coloca o valor que estava em i (guardado no temp) na posição de j
             }
         }
     }
 
     public static void main(String[] args) {
-        new Uni6Exe10();
-
+        Uni6Exe10 uni6Exe10 = new Uni6Exe10();
+        uni6Exe10.incluirValor();
+        uni6Exe10.pesquisarValor();
+        uni6Exe10.alterarValor();
+        uni6Exe10.excluirValor();
+        uni6Exe10.mostrarVetor();
+        uni6Exe10.ordernarValor();
+        uni6Exe10.inverterValores();
     }
 
 }

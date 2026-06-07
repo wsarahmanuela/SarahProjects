@@ -8,30 +8,29 @@ public class ExemploNome {
         String[] nome = new String[tamanho];
         double[] notas = new double[tamanho];
         Scanner sc = new Scanner(System.in);
-        for(int i = 0; i < tamanho; i++){
-            System.out.println("Digite o nome: "+i);
+        for (int i = 0; i < tamanho; i++) {
+            System.out.println("Digite o nome: " + i);
             nome[i] = sc.nextLine();
             System.out.println("Digite a nota: ");
             notas[i] = sc.nextDouble();
             sc.nextLine();
         }
         System.out.println("Lista os nomes");
-        for(int i = 0; i< tamanho; i++){
-            System.out.println("\nPosicao: "+i);
+        for (int i = 0; i < tamanho; i++) {
+            System.out.println("\nPosicao: " + i);
             System.out.println(nome[i]);
-            System.out.println("Notas: "+ notas[i]);
+            System.out.println("Notas: " + notas[i]);
         }
         int posicaoMaiorNota = 0;
         double maiorNota = Double.MIN_VALUE;
-        for(int i = 0; i < tamanho; i++){
-            if(notas[i]>maiorNota){
+        for (int i = 0; i < tamanho; i++) {
+            if (notas[i] > maiorNota) {
                 maiorNota = notas[i];
                 posicaoMaiorNota = i;
             }
         }
-        System.out.println("Aluno com maior nota: \n"+
-            nome[posicaoMaiorNota]
-        );
+        System.out.println("Aluno com maior nota: \n" +
+                nome[posicaoMaiorNota]);
     }
 
 }
