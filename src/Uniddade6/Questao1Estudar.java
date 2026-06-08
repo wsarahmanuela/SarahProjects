@@ -106,7 +106,7 @@ public class Questao1Estudar {
         System.out.println("MOstrando vetor");
         for (int i = 0; i < nomes.length; i++) {
             System.out.print("| ");
-            System.out.println(nomes[i]);
+            System.out.print(nomes[i]);
             System.out.print(" |");
         }
     }
@@ -114,10 +114,10 @@ public class Questao1Estudar {
     private void ordernarNome() {
         String bolha;
         for (int i = 0; i < tamanho - 1; i++) {
-            if (nomes[i].compareTo(nomes[i + 1]) > 0) {// nao da pra usar > com string
-                bolha = nomes[i];
-                nomes[i] = nomes[i + 1];
-                nomes[i + 1] = bolha;
+            if (nomes[i].compareTo(nomes[i + 1]) > 0) {// nao da pra usar > com string // Loop que percorre o array de 0 até tamanho - 2. Para em tamanho - 1 porque compara nomes[i] com nomes[i+1] — se fosse até o fim estouraria o índice.
+                bolha = nomes[i];// guarda o maior temporariamente
+                nomes[i] = nomes[i + 1]; //  coloca o menor na posição anterior
+                nomes[i + 1] = bolha; // coloca o maior na posição seguinte
                 i -= 1;
             }
         }
