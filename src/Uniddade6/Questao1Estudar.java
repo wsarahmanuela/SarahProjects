@@ -142,6 +142,8 @@ public class Questao1Estudar {
 // System.out.println(resultado); // vai imprimir o maior numero
 // }
 
+
+
 // while
 // private void misterio4() {
 // int[] numeros = {3, 6, 9, 2, 5, 8, 1, 4, 7}; // cria vetor com os valores
@@ -156,6 +158,8 @@ public class Questao1Estudar {
 // System.out.println(resultado); // mostra o ultimo numero divisivel por 3
 // }
 
+
+
 // private void ordernarNome(){
 // String bolha; // ariável temporária para guardar um nome durante a troca, igual a uma caixinha auxiliar
 // for(int i = 0; i < tamanho - 1; i++){ // percorre o vetor até o penúltimo elemento, porque compara i com i+1, se fosse até o último daria erro
@@ -168,6 +172,8 @@ public class Questao1Estudar {
 // }
 // System.out.println("Valores ordanados");
 // }
+
+
 
 // private void misterio7() {
 // int[] numeros = {4, 7, 2, 9, 1, 5};
